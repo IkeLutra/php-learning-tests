@@ -13,7 +13,7 @@ class TestVariableScopeFuctions extends \PHPUnit_Framework_TestCase
                 return $values[$key];
             }
         );
-
+        // This will fail due to undefined variable $values
         $this->assertEquals('bar', $functions['getValue']('foo'));
     }
 }
